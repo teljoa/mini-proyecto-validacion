@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="es">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width,initial-scale=1">
+        <title>Nueva reserva</title>
+        <link rel="stylesheet" href="css/style.css">
+    </head>
+    <body>
+        <main class="container">
+            <h1>Crear Reserva</h1>
+            <form id="reservationForm" novalidate>
+                <div class="form-field" data-field="date">
+                    <label>Fecha</label>
+                    <input name="date" type="date" />
+                    <small></small>
+                </div>
+
+                <div class="form-field" data-field="time">
+                    <label>Hora</label>
+                    <input name="time" type="time" />
+                    <small></small>
+                </div>
+
+                <div class="form-field" data-field="people">
+                    <label>Número de personas</label>
+                    <input name="people" type="number" min="1" max="10" />
+                    <small></small>
+                </div>
+
+                <div class="form-field" data-field="clientId">
+                    <label>ID del cliente</label>
+                    <input name="clientId" type="number" />
+                    <small></small>
+                </div>
+
+                <div class="form-field" data-field="activity">
+                    <label>Tipo de actividad</label>
+                    <select name="activity">
+                    <option value="">-- selecciona --</option>
+                    <option value="escape-room">Escape Room</option>
+                    <option value="cena-tematica">Cena temática</option>
+                    <option value="team-building">Team Building</option>
+                    </select>
+                    <small></small>
+                </div>
+
+                <button type="submit">Crear reserva</button>
+                <p id="reservationMessage" class="message"></p>
+            </form>
+        </main>
+        <script type="module" src="js/reservations.js"></script>
+    </body>
+</html>

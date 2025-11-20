@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="es">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width,initial-scale=1">
+        <title>Nuevo cliente</title>
+        <link rel="stylesheet" href="css/style.css">
+    </head>
+    <body>
+        <main class="container">
+            <h1>Crear Cliente</h1>
+            <form id="clientForm" novalidate>
+                <div class="form-field" data-field="fullname">
+                    <label>Nombre completo</label>
+                    <input name="fullname" type="text" />
+                    <small></small>
+                </div>
+
+                <div class="form-field" data-field="phone">
+                    <label>Teléfono</label>
+                    <input name="phone" type="text" maxlength="9" />
+                    <small></small>
+                </div>
+
+                <div class="form-field" data-field="email">
+                    <label>Email</label>
+                    <input name="email" type="email" />
+                    <small></small>
+                </div>
+
+                <div class="form-field" data-field="age">
+                    <label>Edad</label>
+                    <input name="age" type="number" min="18" max="100" />
+                    <small></small>
+                </div>
+
+
+                <div class="form-field" data-field="dni">
+                    <label>DNI</label>
+                    <input name="dni" type="text" />
+                    <small></small>
+                </div>
+
+                <button type="submit">Crear cliente</button>
+                <p id="clientMessage" class="message"></p>
+            </form>
+        </main>
+        <script type="module" src="js/clients.js"></script>
+    </body>
+</html>

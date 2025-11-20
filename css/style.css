@@ -1,0 +1,85 @@
+:root{
+    font-family:system-ui,-apple-system,Segoe UI,Roboto,Arial;
+    font-size:16px
+}
+
+body{
+    margin:0;
+    padding:1.25rem;
+    background:#f6f7fb;
+    color:#111
+}
+
+.container
+{
+    max-width:720px;
+    margin:0 auto;
+    background:#fff;
+    padding:1.5rem;
+    border-radius:8px;
+    box-shadow:0 6px 18px rgba(0,0,0,.06)
+}
+
+h1{
+    margin-top:0
+}
+
+.form-field{
+    margin-bottom:1rem
+}
+
+label{
+    display:block;
+    margin-bottom:.25rem;
+    font-weight:600
+}
+
+input,select{
+    width:100%;
+    padding:.5rem;
+    border:1px solid #cfcfd6;
+    border-radius:6px
+}
+
+small{
+    display:block;
+    height:1rem;
+    margin-top:.25rem;
+    color:#b00020;
+    font-size:.875rem
+}
+.form-field.success input,.form-field.success select{
+    border-color:#2e7d32
+}
+
+.form-field.error input,.form-field.error select{
+    border-color:#b00020
+}
+
+.message{
+    margin-top:1rem;
+    font-weight:600
+}
+
+button{
+    background:#2563eb;
+    color:#fff;
+    border:0;
+    padding:.6rem 1rem;
+    border-radius:6px;
+    cursor:pointer
+}
+
+button:disabled{
+    opacity:.6
+}
+
+nav ul{
+    padding-left:0;
+    list-style:none
+}
+
+nav li{
+    display:inline;
+    margin-right:1rem
+}
