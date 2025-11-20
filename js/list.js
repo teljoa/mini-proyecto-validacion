@@ -61,5 +61,5 @@ document.addEventListener('click', async (e)=>{
     }
 });
 
-loadClients();
 loadReservations();
+loadClients();
