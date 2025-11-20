@@ -1,0 +1,39 @@
+{
+    "clients": [
+        {
+            "id": 1,
+            "fullname": "Ana García López",
+            "phone": "612345678",
+            "email": "ana@example.com",
+            "age": 29,
+            "dni": "12300000A"
+        },
+        {
+            "id": 2,
+            "fullname": "Carlos Martínez Rivas",
+            "phone": "698112233",
+            "email": "carlos@example.com",
+            "age": 42,
+            "dni": "45600000B"
+        }
+    ],
+
+    "reservations": [
+        {
+            "id": 1,
+            "date": "2025-12-15",
+            "time": "18:00",
+            "people": 4,
+            "clientId": 1,
+            "activity": "escape-room"
+        },
+        {
+            "id": 2,
+            "date": "2025-12-20",
+            "time": "20:00",
+            "people": 2,
+            "clientId": 2,
+            "activity": "cena-tematica"
+        }
+    ]
+}
